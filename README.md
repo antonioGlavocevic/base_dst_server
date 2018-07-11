@@ -8,6 +8,6 @@ crontab -e
 
 Select /bin/nano
 
-0 6 * * * sh /home/dst/server_dst/bin/update.sh
+0 6 * * * sh /home/ubuntu/steamapps/server_dst/bin/update.sh
 
 and press CTRL + X and Y for save and quit 
