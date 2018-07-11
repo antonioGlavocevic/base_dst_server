@@ -2,7 +2,7 @@
 # launch of server Overworld
 
 #Path Directory
-name_folder="/home/ubuntu/steamapps/server_dst/bin"
+name_folder="/home/ubuntu/Steam/steamapps/server_dst/bin"
 
 #Command line
 start_overworld="sh start.sh"

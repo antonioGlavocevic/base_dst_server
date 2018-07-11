@@ -2,7 +2,7 @@
 # launch of server Cave
 
 #Path Directory
-name_folder="/home/ubuntu/steamapps/server_dst/bin"
+name_folder="/home/ubuntu/Steam/steamapps/server_dst/bin"
 
 #Command line
 start_cave="sh start2.sh"
