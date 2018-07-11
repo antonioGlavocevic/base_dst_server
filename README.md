@@ -4,8 +4,8 @@
     sudo apt-get install lib32gcc1
     sudo apt-get install lib32stdc++6
     sudo apt-get install libcurl4-gnutls-dev:i386
-    mkdir ~/steamcmd
-    cd ~/steamcmd
+    mkdir /home/ubuntu/steamcmd
+    cd /home/ubuntu/steamcmd
     wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
     tar -xvzf steamcmd_linux.tar.gz
     ./steamcmd.sh
@@ -17,14 +17,14 @@
     screen -S "DST Server" ./dontstarve_dedicated_server_nullrenderer
 
 ## Setup
-./bin goes to ~/steamapps/server_dst/bin
+./server_dst goes to /home/ubuntu/steamapps/server_dst
 
-    cp ./bin/* ~/steamapps/server_dst/bin/
+    cp -r ./server_dst/* /home/ubuntu/steamapps/server_dst
 
-./MyDediServer goes to ~/.klei/DoNotStarveTogether
+./MyDediServer goes to /home/ubuntu/.klei/DoNotStarveTogether
 
-    rm -rf ~/.klei/DoNotStarveTogether/MyDediServer
-    cp -r ./MyDediServer ~/.klei/DoNotStarveTogether
+    rm -rf /home/ubuntu/.klei/DoNotStarveTogether/MyDediServer
+    cp -r ./MyDediServer /home/ubuntu/.klei/DoNotStarveTogether
 
 ## Schedule
     crontab -e
