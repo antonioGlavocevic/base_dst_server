@@ -4,7 +4,6 @@
     sudo apt-get install lib32gcc1
     sudo apt-get install lib32stdc++6
     sudo apt-get install libcurl4-gnutls-dev:i386
-    chmod a+rw `tty`
     mkdir ~/steamcmd
     cd ~/steamcmd
     wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
