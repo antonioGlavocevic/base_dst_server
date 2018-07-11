@@ -1,0 +1,1 @@
+./dontstarve_dedicated_server_nullrenderer -console -cluster MyDediServer -shard Master
