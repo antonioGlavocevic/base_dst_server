@@ -1,7 +1,12 @@
 ## Setup
-/bin goes to ~/steamapps/server_dst/bin
+./bin goes to ~/steamapps/server_dst/bin
 
-/MyDediServer goes to ~/.klei/DoNotStarveTogether
+cp ./bin/* ~/steamapps/server_dst/bin/
+
+./MyDediServer goes to ~/.klei/DoNotStarveTogether
+
+rm -rf ~/.klei/DoNotStarveTogether/MyDediServer
+cp -r ./MyDediServer ~/.klei/DoNotStarveTogether
 
 ## Schedule
 crontab -e
