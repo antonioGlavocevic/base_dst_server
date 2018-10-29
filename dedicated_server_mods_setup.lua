@@ -17,8 +17,6 @@ ServerModSetup("378160973")
 ServerModSetup("516059534")
 --#Repair Combine
 ServerModSetup("767776640")
---#PartyHUD
-ServerModSetup("782961570")
 --#Bee Nice
 ServerModSetup("361994110")
 
