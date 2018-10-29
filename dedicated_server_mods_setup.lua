@@ -19,6 +19,8 @@ ServerModSetup("516059534")
 ServerModSetup("767776640")
 --#Bee Nice
 ServerModSetup("361994110")
+--#No Thermal Stone Durability
+ServerModSetup("466732225")
 
 --ServerModCollectionSetup takes a string of a specific mod's Workshop id. It will download all the mods in the collection and install them to the mod directory on boot.
 	--The Workshop id can be found at the end of the url to the collection's Workshop page.

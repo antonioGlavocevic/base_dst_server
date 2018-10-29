@@ -25,5 +25,7 @@ return {
     configuration_options = {
       HAT_DECAY = true
     }
-  }
+  },
+  --#No Thermal Stone Durability
+  ["workshop-466732225"] = { enabled = true }
 }
