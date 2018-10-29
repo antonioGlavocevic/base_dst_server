@@ -21,7 +21,12 @@ return {
   --#Repair Combine
   ["workshop-767776640"] = { enabled = true },
   --#PartyHUD
-  ["workshop-782961570"] = { enabled = true },
+  ["workshop-782961570"] = { enabled = true,
+    configuration_options = {
+      layout = 0,
+      position = 2
+    }
+  },
   --#Bee Nice
   ["workshop-361994110"] = { enabled = true,
     configuration_options = {
