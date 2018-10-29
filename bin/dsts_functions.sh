@@ -52,13 +52,11 @@ function dsts_restart {
 }
 function dsts_update {
   dsts_stop
-  # Backup dedicated_server_mods_setup.lua as app_update overwrites it
-  cp $DST_SERVER_PATH/mods/dedicated_server_mods_setup.lua $KLEI_PATH/dedicated_server_mods_setup.lua
   # Run app update
   $STEAMCMD_PATH/steamcmd.sh +login anonymous +force_install_dir $DST_SERVER_PATH +app_update 343050 validate +quit
   sleep 10
-  # Restore dedicated_server_mods_setup.lua backup
-  cp $KLEI_PATH/dedicated_server_mods_setup.lua $DST_SERVER_PATH/mods/dedicated_server_mods_setup.lua
+  # Restore dedicated_server_mods_setup.lua as app_update overwrites it
+  cp $DIR/../dedicated_server_mods_setup.lua $DST_SERVER_PATH/mods/dedicated_server_mods_setup.lua
   dsts_start
 }
 function dsts_peekmaster {
