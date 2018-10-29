@@ -13,6 +13,14 @@ ServerModSetup("1079538195")
 ServerModSetup("362175979")
 --#Global Positions
 ServerModSetup("378160973")
+--#DST Abigail Call
+ServerModSetup("516059534")
+--#Repair Combine
+ServerModSetup("767776640")
+--#PartyHUD
+ServerModSetup("782961570")
+--#Bee Nice
+ServerModSetup("361994110")
 
 --ServerModCollectionSetup takes a string of a specific mod's Workshop id. It will download all the mods in the collection and install them to the mod directory on boot.
 	--The Workshop id can be found at the end of the url to the collection's Workshop page.
