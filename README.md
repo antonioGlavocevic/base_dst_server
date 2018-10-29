@@ -14,22 +14,14 @@ login anonymous
 force_install_dir /home/ubuntu/Steam/steamapps/server_dst
 app_update 343050 validate
 quit
-cd /home/ubuntu/Steam/steamapps/server_dst/bin/
-screen -S "DST Server" ./dontstarve_dedicated_server_nullrenderer
+/home/ubuntu/Steam/steamapps/server_dst/bin/dontstarve_dedicated_server_nullrenderer
 ```
 
 ## Setup
-./server_dst goes to /home/ubuntu/Steam/steamapps/server_dst
+copy dedicated_sever_mods_setup.lua to /home/ubuntu/Steam/steamapps/server_dst/mods
 
 ```
-cp -r ./server_dst/* /home/ubuntu/Steam/steamapps/server_dst
-```
-
-./MyDediServer goes to /home/ubuntu/.klei/DoNotStarveTogether
-
-```
-rm -rf /home/ubuntu/.klei/DoNotStarveTogether/MyDediServer
-cp -r ./MyDediServer /home/ubuntu/.klei/DoNotStarveTogether
+cp dedicated_sever_mods_setup.lua /home/ubuntu/Steam/steamapps/server_dst/mods
 ```
 
 ## Schedule
@@ -40,7 +32,7 @@ crontab -e
 Select /bin/nano
 
 ```
-0 6 * * * sh /home/ubuntu/Steam/steamapps/server_dst/bin/update.sh
+0 6 * * * dst_server_controller update
 ```
 
 and press CTRL + X and Y for save and quit 

@@ -1,0 +1,43 @@
+#!/bin/bash
+declare -a commands=(
+  "start"
+  "stop"
+  "restart"
+  "update"
+  "peekmaster"
+  "peekcave"
+  "resetbase"
+)
+
+function listcommands {
+  echo "List of commands:"
+  printf '\t%s\n' "${commands[@]}"
+}
+
+if [ $# -ne 1 ]
+then
+  echo "Usage: dsts_controller <command>"
+  listcommands
+  exit 1
+fi
+
+DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$DIR" ]];
+then
+  DIR="$PWD";
+fi
+source $DIR/dsts_config.cfg
+source $DIR/dsts_functions.sh
+
+for command in "${commands[@]}"
+do
+  if [ $1 == $command ]
+  then
+    dsts_$command
+    exit 0
+  fi
+done
+
+echo "Command '$1' does not exist"
+listcommands
+exit 1
