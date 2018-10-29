@@ -68,4 +68,5 @@ function dsts_peekcave {
 function dsts_resetbase {
   rm -rf $KLEI_PATH/MyDediServer
   cp -r $DIR/../MyDediServer $KLEI_PATH
+  cp $DIR/../dedicated_server_mods_setup.lua $DST_SERVER_PATH/mods/dedicated_server_mods_setup.lua
 }

@@ -18,10 +18,10 @@ quit
 ```
 
 ## Setup
-copy dedicated_sever_mods_setup.lua to /home/ubuntu/Steam/steamapps/server_dst/mods
+Run bin/dst_controller resetbase to reset server to clean base state
 
 ```
-cp dedicated_sever_mods_setup.lua /home/ubuntu/Steam/steamapps/server_dst/mods
+bin/dst_controller resetbase
 ```
 
 ## Schedule
